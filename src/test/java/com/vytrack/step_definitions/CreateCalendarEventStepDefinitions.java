@@ -2,6 +2,7 @@ package com.vytrack.step_definitions;
 
 import com.vytrack.pages.CreateCalendarEventPage;
 import com.vytrack.utils.BrowserUtils;
+import com.vytrack.utils.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -38,5 +39,6 @@ public class CreateCalendarEventStepDefinitions {
 
         Assert.assertEquals(title, createCalendarEventPage.getDataFromGeneralInfo("Title"));
         Assert.assertEquals(description, createCalendarEventPage.getDataFromGeneralInfo("Description"));
+
     }
 }
